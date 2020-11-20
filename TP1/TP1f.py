@@ -3,7 +3,7 @@
 def pri():
     print("Bonjour")
 
-def bissextile (annee):
+def bissextile(annee):
     rep = False
     test400 = annee%400
     test4 = annee%4
@@ -61,6 +61,18 @@ def mesImpots(revenu) :
     return rep  
 
 #Troisième partie : Matrice
+
+def multiplication(B,C) :
+    A = []
+    x = 0
+    for i in range(1,3):
+        for k in range(1,3):
+            x += B[i][k]*C[k][i]
+        A.append(x)
+    return A
+
+
+    
 
 
     
