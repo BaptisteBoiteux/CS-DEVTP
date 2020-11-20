@@ -1,4 +1,5 @@
 import TP1f as f
 
-rep = f.bissextile(2020)
+f.nb_jour_mois(13,202)
+rep = f.nb_jour_mois(13,202)
 print(rep)
