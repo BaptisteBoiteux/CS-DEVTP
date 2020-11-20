@@ -31,4 +31,10 @@ def nb_jour_mois(mois,annee) :
                 Nb = 28
     return Nb
 
+def date_valide(jour,mois,annee) :
+    if jour <= nb_jour_mois(mois,annee) :
+        return True
+    else :
+        return False
+
 
