@@ -1,3 +1,5 @@
+#Première partie : Calendrier
+
 def pri():
     print("Bonjour")
 
@@ -36,5 +38,31 @@ def date_valide(jour,mois,annee) :
         return True
     else :
         return False
+
+#Deuxième partie : Impôts
+
+def mesImpots(revenu) :
+    rep = 0
+    Tranche = [9964,27519,73779,156244]
+    if revenu > Tranche[0] and revenu < Tranche[1] :
+        rep += (revenu - Tranche[0])*0.14
+    if revenu > Tranche[1] and revenu < Tranche[2] :
+        rep += (revenu - Tranche[1])*0.30
+        rep += (Tranche [1] - Tranche[0])*0.14
+    if revenu > Tranche[2] and revenu < Tranche[3] :
+        rep += (revenu - Tranche[2])*0.41
+        rep += (Tranche [2] - Tranche[1])*0.30
+        rep += (Tranche [1] - Tranche[0])*0.14
+    if revenu > Tranche[3] :
+        rep += (revenu - Tranche[3])*0.45
+        rep += (Tranche [3] - Tranche[2])*0.41
+        rep += (Tranche [2] - Tranche[1])*0.30
+        rep += (Tranche [1] - Tranche[0])*0.14
+    return rep  
+
+#Troisième partie : Matrice
+
+
+    
 
 
